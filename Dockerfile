@@ -1,5 +1,5 @@
-FROM tecadmin/ubuntu-ssh:16.04
-LABEL maintainer="rahul@tecadmin.net"
+FROM ubuntu:16.04
+LABEL maintainer="ravikumar@gmail.com"
 
 RUN apt-get update \
    && apt-get install -y apache2

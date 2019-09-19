@@ -1,11 +1,9 @@
 FROM ubuntu:16.04
-LABEL maintainer="ravikumar@gmail.com"
 
 RUN apt-get update \
    && apt-get install -y apache2
 
-COPY html/* /var/www/html/
-
+COPY index.html /var/www/html/
 WORKDIR /var/www/html
 CMD ["apachectl", "-D", "FOREGROUND"]
 EXPOSE 80

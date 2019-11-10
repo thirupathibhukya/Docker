@@ -1,5 +1,6 @@
 FROM ubuntu:trusty
 MAINTAINER rudratechnologies.cloud@gmail.com
 RUN apt-get update
-RUN apt-get install git -y
-CMD ["echo", "welcome to rudra technologies"]
+ENV name rudratechnologies
+ENTRYPOINT echo "welcome to $name"
+

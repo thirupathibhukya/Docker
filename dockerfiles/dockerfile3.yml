@@ -1,5 +1,6 @@
-FROM ubuntu:trusty
-MAINTAINER rudratechnologies.cloud@gmail.com
+FROM ubuntu:14.04
+MAINTAINER ravikumar@gmail.com
 RUN apt-get update
-ENTRYPOINT ["/bin/ping","-c","100"]
-CMD ["google.com"]
+RUN apt-get install git -y
+ENTRYPOINT ["ping"]
+CMD ["ping", "google.com"]

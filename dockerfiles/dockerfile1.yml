@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-LABEL maintainer="rudratechnologies.cloud@gmail.com"
+LABEL maintainer="ravitechnologies.cloud@gmail.com"
 RUN apt-get update
-RUN apt-get install git -y
-CMD ["echo", "welcome to rudra technologies"]
+RUN apt-get install tree -y
+CMD ["echo", "welcome to ravi technologies"]

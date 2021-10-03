@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-LABEL maintainer="rudratechnologies.cloud@gmail.com"
+LABEL maintainer="ravitechnologies.cloud@gmail.com"
 RUN apt-get update && apt-get install apache2 -y
 CMD ["apachectl", "-D", "FOREGROUND"]
 EXPOSE 80

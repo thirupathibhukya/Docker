@@ -1,6 +1,6 @@
 FROM tomcat:8.5.37-jre8
-LABEL maintainer="rudratechnologies.cloud@gmail.com"
+LABEL maintainer="ravitechnologies.cloud@gmail.com"
 RUN apt-get update
-ADD https://ansibles3.s3.amazonaws.com/raviLogin.war /usr/local/tomcat/webapps/
+ADD https://ravidevops123.s3.amazonaws.com/raviLogin.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
